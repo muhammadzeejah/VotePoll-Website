@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.container h1 {
+    letter-spacing: 2px;
+}
+
+.box {
+    /* margin: auto 15rem; */
+    width: 60%;
+}
+
+.solid {
+    margin-top: 5px;
+    margin-bottom: 2rem;
+    border-top: 3px solid;
+    width: 6%;
+    border-image: linear-gradient(to right, #ffff, rgba(241, 85, 64, 1)) 1 0 0 0;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .box {
+        margin: auto 1rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .solid {
+        width: 15%;
+    }
+    .box {
+        width: 90%;
+    }
+    .video{
+        width: 10%;
+        height: 100%;
+    }
+}
