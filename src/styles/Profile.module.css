@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    position: relative;
+}
+
+.solid {
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #ffff, rgba(241, 85, 64, 1)) 1 0 0 0;
+    width: 7%;
+    margin-top: 5px;
+    margin-bottom: 2rem;
+}
+
+.heading{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.box {
+    width: 520px
+}
+
+.userImg {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition-delay: 1s;
+    width: 50%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .info{
+        justify-content: space-between;
+        width: 100%;
+    }
+}

@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  margin: 4rem 5rem 0rem;
+}
+
+.navbar {
+  background: rgb(100, 100, 105);
+  background: linear-gradient(90deg, rgba(100, 100, 105, 1) 0%, rgba(241, 85, 64, 1) 44%);
+}
+
+.websiteName {
+  color: #f15540;
+  margin-left: 5px;
+  border-top: 2px solid;
+  border-image: linear-gradient(to right, #ffff, rgba(241, 85, 64, 1)) 1 0 0 0;
+}
+
+.heading {
+  font-weight: bolder;
+  font-size: 55px;
+  color: rgb(68, 67, 67);
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  margin-top: 1rem;
+  margin-bottom: 28px;
+  margin-left: 5px;
+  color: rgb(61, 60, 60);
+  width: 60%;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.headerImg {
+  display: flex;
+  justify-content: end;
+  width: 800px;
+}
+
+.headerImg img {
+  height: 100%;
+  width: 100%;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.resultMenu {
+  background-color: white;
+  color: rgb(61, 60, 60);
+  border-radius: 5px;
+  padding: 10px 0px;
+  position: absolute;
+  top: 48px;
+  right: 162px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.resultMenu a {
+  color: rgb(61, 60, 60);
+}
+
+.userMenu {
+  background-color: white;
+  color: rgb(61, 60, 60);
+  border-radius: 5px;
+  padding: 10px 0px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.userMenu a {
+  color: rgb(61, 60, 60);
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35vh;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerImg {
+    display: none;
+    /* justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    width: 50%;
+    height: 50%; */
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .description {
+    text-align: center;
+    width: 100%;
+  }
+  .description p{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .button {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

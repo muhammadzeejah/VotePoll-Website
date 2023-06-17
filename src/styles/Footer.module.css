@@ -1,0 +1,148 @@
+.footerDistributed {
+    background: #444;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 100px 40px;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+/* Footer left */
+
+.footerDistributed .footerLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Footer links */
+
+.footerDistributed .footerLinks {
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.footerDistributed .footerLinks a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerDistributed .footerCompanyName {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer social icons */
+
+.footerDistributed .footerIcons a {
+    display: inline-block;
+    padding: 7px 10px 2.5px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footerDistributed .footerRight {
+    float: right;
+}
+
+.footerDistributed form {
+    display: inline-block;
+}
+
+.footerDistributed form input {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #2b2f31;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color: #d1d2d2;
+    width: 400px;
+    padding: 18px;
+}
+
+.footerDistributed form input {
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.footerDistributed form button {
+    border-radius: 3px;
+    background-color: #33383b;
+    color: #ffffff;
+    padding: 15px 50px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1000px) {
+
+    .footerDistributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footerDistributed .footerCompanyName {
+        font-size: 12px;
+    }
+
+    .footerDistributed form input {
+        width: 250px;
+    }
+
+    .footerDistributed form button {
+        padding: 10px 35px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .footerDistributed {
+        padding: 30px;
+    }
+
+    .footerDistributed .footerLeft,
+    .footerDistributed .footerRight {
+        float: none;
+        max-width: 400px;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .footerDistributed .footerLeft {
+        margin-bottom: 40px;
+    }
+
+    .footerDistributed form {
+        margin-top: 30px;
+    }
+
+    .footerDistributed form {
+        display: block;
+    }
+
+    .footerDistributed form button {
+        float: none;
+    }
+}

@@ -1,0 +1,227 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    width: 100%;
+    height: calc(100vh - 100px)
+}
+
+.solid {
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #ffff, rgba(241, 85, 64, 1)) 1 0 0 0;
+    width: 20%;
+    margin-top: 5px;
+    margin-bottom: 2rem;
+}
+
+.searchField {
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.search {
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: 1px solid #d9e0e8;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .search:focus {
+    outline: none;
+  }
+
+.resultSearch {
+    padding: 12px 10px;
+    border-radius: 4px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 1px solid #d9e0e8;
+    border-left: none;
+    width: 100%;
+}
+
+.resultSearch:focus {
+    outline: none;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1.8px solid rgb(216, 216, 216);
+    padding: 10px 0px;
+}
+
+/* .box:last-child{
+    border-bottom: none;
+} */
+
+.heading{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.headerBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.partyHeading {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
+
+.noOfSeats {
+    width: 30%;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.partyName {
+    width: 30%;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.notFound {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.searchBar {
+    display: flex;
+}
+
+.dropdownContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.resultDropdownBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 5px 5px 0px 10px;
+    height: 41px;
+    cursor: pointer;
+    border: 1px solid #d9e0e8;
+}
+
+.selectedText {
+    cursor: pointer;
+    display: flex;
+}
+
+.dropdownText {
+    color: #6f6f6f;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+@keyframes animateFromBottom {
+    from {
+        transform: translate3d(0, 10px, 0);
+        opacity: 0
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.resultSelectboxContainer {
+    max-height: 150px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 125px;
+    margin-top: 0.2rem;
+    animation-name: animateFromBottom;
+    animation-duration: 0.3s;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.SelectBox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.Text {
+    margin-bottom: 0rem;
+    color: #6f6f6f;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0px 10px;
+    padding-bottom: 2px;
+}
+
+.progressBar{
+    width: 100%;
+}
+
+.candidateResultContainer{
+    min-width: 700px;
+    max-width: 80%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.nationalContainer{
+    min-width: 500px;
+    max-width: 80%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .candidateResultContainer{
+        min-width: 80%;
+    }
+    .nationalContainer{
+        min-width: 80%;
+    }
+    .progressBar{
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .heading{
+        font-size: 24px;
+    }
+    .progressBar{
+        width: 50%;
+    }
+}
