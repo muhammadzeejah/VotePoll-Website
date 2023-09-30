@@ -1,15 +1,51 @@
-# VotePoll-Website
-Our online voting system, backed by blockchain technology, revolutionizes the democratic process by ensuring security, transparency, and convenience. The system comprises three main components: a citizen registration interface, a user-friendly voting website, and a comprehensive admin panel.
+# Votepoll Frontend: Voter Interface
 
--- Citizen registration:
-The citizen registration interface utilizes cutting-edge face recognition technology powered by face-api.js. This ensures accurate and secure registration of citizens, adding an extra layer of authentication and preventing duplicate registrations.
+## Description
 
--- VotePoll-Website:
-Registered users can then access the voting website, where they can securely log in and cast their votes. The blockchain technology underlying the system guarantees tamper-proof and immutable records, ensuring the integrity and transparency of the voting process. This empowers citizens to participate in elections from the comfort of their own homes, enhancing accessibility and convenience.
+This project represents the frontend component of the Votepoll system, offering a user-friendly interface for voters to participate in online elections securely. It is built using Next.js and leverages various UI libraries and dependencies for enhanced functionality.
 
--- VotePoll-AdminPanel:
-The admin panel serves as the central hub for election management. Administrators have full control over the system, with the ability to open elections, monitor real-time vote counts retrieved from the blockchain, and publish results securely. They can also effortlessly manage parties, candidates, and constituencies by adding, updating, deleting, and viewing relevant information. This streamlines administrative tasks and ensures accurate representation throughout the electoral process.
+## Features
 
-With our online voting system, citizens can exercise their voting rights with confidence, knowing that their votes are securely stored on the blockchain. The face recognition-based registration process adds an extra layer of security, preventing fraudulent activities. Meanwhile, the admin panel empowers administrators to efficiently manage elections, ensuring transparency and facilitating informed decision-making.
+- **User Authentication:** Secure user authentication with JWT tokens for a personalized voting experience.
+- **Interactive UI:** A responsive and user-friendly interface for voters to cast their votes conveniently.
+- **Real-Time Updates:** Stay informed with real-time updates on the election process and results.
+- **Smooth Scrolling:** Implement smooth scrolling to navigate seamlessly through the voting process.
+- **Error Handling:** Robust error handling to ensure a seamless user experience.
+- **Mobile-Friendly:** Ensure accessibility and usability on mobile devices for a wide voter reach.
 
-Experience the future of voting with our state-of-the-art online voting system backed by blockchain, providing a secure, user-friendly, and transparent platform for democratic participation.
+## Getting Started
+
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Start the development server with `npm run dev`.
+4. Access the voter interface via `http://localhost:PORT`, where `PORT` is the configured port (default is 3000).
+
+## Dependencies
+
+- Next.js
+- React
+- Redux
+- Material-UI
+- Emotion
+- Axios
+- Cloudinary
+- ethers.js
+- Face-api.js
+- React Toastify
+- JS Cookie
+- Next Redux Wrapper
+
+## Scripts
+
+- `npm run dev`: Start the development server with Next.js.
+- `npm run build`: Build the production-ready application.
+- `npm start`: Start the production server.
+- `npm run lint`: Run linting (add linting rules as needed).
+
+## License
+
+- This project is licensed under the [ISC License](LICENSE).
+
+## Contact
+
+- For questions or support, please contact Muhammad Zeeja at muhammadzeejah1122@gmail.com.
